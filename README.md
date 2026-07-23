@@ -102,20 +102,3 @@ Project
 ```
 
 ---
-
-## 🔐 Environment Variables
-
-Create a `.env` file inside the backend folder.
-
-```env
-DATABASE_URL=postgresql://username:password@localhost/db_name
-
-SECRET_KEY=your_secret_key
-
-ALGORITHM=HS256
-
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-
-GROQ_API_KEY=your_groq_api_key
-```
----
