@@ -25,8 +25,6 @@ from app.services.services import (
 
 router = APIRouter()
 
-#oauth2_scheme = OAuth2PasswordBearer(tokenUrl="users/signin")
-
 # Pydantic Schema for Chat
 class ChatInput(BaseModel):
     message: str

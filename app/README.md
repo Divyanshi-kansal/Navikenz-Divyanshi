@@ -39,3 +39,47 @@ contains Pydantic schemas.
 Security, hashing and helper functions.
 
 ---
+
+## Backend Setup
+
+Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate Environment
+
+Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux / Mac
+
+```bash
+source .venv/bin/activate
+```
+
+Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## How to Run Backend?
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend runs on
+
+```
+http://127.0.0.1:8000
+```
+
+---

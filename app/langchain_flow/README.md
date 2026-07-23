@@ -1,6 +1,6 @@
 # LangChain Flow
 
-This folder contains the omplete AI workflow.
+This folder contains the complete AI workflow.
 
 ## Files
 

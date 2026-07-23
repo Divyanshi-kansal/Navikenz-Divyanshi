@@ -16,7 +16,7 @@ oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl="users/signin",
     auto_error=False
 )
-# oauth2_scheme = OAuth2PasswordBearer(tokenUrl="users/signin")
+
 # 2. Secret Key Setup 
 SECRET_KEY = os.getenv("Secret_Key")
 ALGORITHM = "HS256"
@@ -40,8 +40,6 @@ def create_access_token(data: dict) -> str:
     
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
-
-#oauth2_scheme = OAuth2PasswordBearer(tokenUrl="users/signin")
 
 def get_current_user(
     request: Request,
